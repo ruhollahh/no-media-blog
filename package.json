@@ -1,7 +1,7 @@
 {
-  "name": "starter-project",
+  "name": "modular-scale",
   "version": "1.0.0",
-  "description": "project description here.",
+  "description": "responsive blog layout using modular scales",
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --output-style compressed -o css src/scss",
@@ -14,7 +14,7 @@
   "author": "Ruhollah Hosseini",
   "repository": {
     "type": "git",
-    "url": "https://github.com/4quila/starter-project"
+    "url": "https://github.com/4quila/modular-scale"
   },
   "license": "MIT",
   "devDependencies": {

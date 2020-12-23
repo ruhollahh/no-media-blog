@@ -1,6 +1,32 @@
-.example {
-  display: grid;
-  transition: all 0.5s;
-  user-select: none;
-  background: linear-gradient(to bottom, white, black);
+body {
+  background-color: #fff;
+  padding-top: 6rem;
+}
+
+.container {
+  overflow: hidden;
+  max-width: 65rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: var(--s2);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc((var(--s3) / 2) * -1);
+
+  & > * {
+    flex-grow: 1;
+    margin: calc(var(--s3) / 2);
+  }
+  & > :last-child {
+    flex-basis: 15rem;
+  }
+
+  & > :first-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: calc(70% - var(--s3));
+  }
 }

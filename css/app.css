@@ -1,1 +1,11 @@
-*,*::before,*::after{padding:0;margin:0}.example{display:grid;transition:all 0.5s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:linear-gradient(to bottom, white, black)}
+@font-face{font-family:Vazir;src:url("/assets/fonts/Vazir.ttf");font-weight:normal}@font-face{font-family:Vazir;src:url("/assets/fonts/Vazir-Bold.ttf");font-weight:bold}*,*::before,*::after{padding:0;margin:0;box-sizing:inherit}:root{--ratio: 1.25;--s-5: calc(
+    var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) /
+      var(--ratio)
+  );--s-4: calc(
+    var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio)
+  );--s-3: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio));--s-2: calc(var(--s0) / var(--ratio) / var(--ratio));--s-1: calc(var(--s0) / var(--ratio));--s0: 1rem;--s1: calc(var(--s0) * var(--ratio));--s2: calc(var(--s0) * var(--ratio) * var(--ratio));--s3: calc(var(--s0) * var(--ratio) * var(--ratio) * var(--ratio));--s4: calc(
+    var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)
+  );--s5: calc(
+    var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) *
+      var(--ratio)
+  );box-sizing:border-box;font-size:calc(0.333vw + 1.1em);line-height:calc(1.5 * var(--ratio))}body{direction:rtl;font-family:Vazir;font-weight:400}h1{font-size:var(--s4)}h2{font-size:var(--s3);color:#06b6d4}h3{font-size:var(--s2);color:#0e7490}a:link,a:visited{text-decoration:none;color:inherit}article>*+*{margin-top:var(--s2)}article>p+p{margin-top:var(--s-1)}body{background-color:#fff;padding-top:6rem}.container{overflow:hidden;max-width:65rem;margin-right:auto;margin-left:auto;padding:var(--s2)}.wrapper{display:flex;flex-wrap:wrap;margin:calc((var(--s3) / 2) * -1)}.wrapper>*{flex-grow:1;margin:calc(var(--s3) / 2)}.wrapper>:last-child{flex-basis:15rem}.wrapper>:first-child{flex-basis:0;flex-grow:999;min-width:calc(70% - var(--s3))}.header{position:fixed;top:0;width:100%;z-index:999;box-shadow:0 var(--s2) var(--s3) #fff;background-color:#fff;color:#475569}.header>*{display:flex;align-items:center}.header__brand{line-height:0}.header__logo{fill:currentColor}.header__nav{margin-right:var(--s3)}.header__nav-list{display:flex;list-style:none}.header__nav-item:not(:first-child){margin-right:var(--s1)}

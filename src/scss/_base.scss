@@ -1,6 +1,81 @@
+@font-face {
+  font-family: Vazir;
+  src: url("/assets/fonts/Vazir.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/assets/fonts/Vazir-Bold.ttf");
+  font-weight: bold;
+}
+
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --ratio: 1.25;
+  --s-5: calc(
+    var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) /
+      var(--ratio)
+  );
+  --s-4: calc(
+    var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio)
+  );
+  --s-3: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio));
+  --s-2: calc(var(--s0) / var(--ratio) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s0) * var(--ratio) * var(--ratio));
+  --s3: calc(var(--s0) * var(--ratio) * var(--ratio) * var(--ratio));
+  --s4: calc(
+    var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)
+  );
+  --s5: calc(
+    var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) *
+      var(--ratio)
+  );
+  box-sizing: border-box;
+  font-size: calc(0.333vw + 1.1em);
+  line-height: calc(1.5 * var(--ratio));
+}
+
+body {
+  direction: rtl;
+  font-family: Vazir;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: var(--s4);
+}
+
+h2 {
+  font-size: var(--s3);
+  color: #06b6d4;
+}
+
+h3 {
+  font-size: var(--s2);
+  color: #0e7490;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+article > * + * {
+  margin-top: var(--s2);
+}
+
+article > p + p {
+  margin-top: var(--s-1);
 }

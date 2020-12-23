@@ -1,1 +1,1 @@
-A simple Boilerplate for front-end projects.
+responsive blog layout using modular scales

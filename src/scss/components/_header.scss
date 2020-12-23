@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 var(--s2) var(--s3) #fff;
+  background-color: #fff;
+  color: #475569;
+
+  & > * {
+    display: flex;
+    align-items: center;
+  }
+  &__brand {
+    line-height: 0;
+  }
+  &__logo {
+    fill: currentColor;
+  }
+  &__nav {
+    margin-right: var(--s3);
+  }
+  &__nav-list {
+    display: flex;
+    list-style: none;
+  }
+  &__nav-item {
+    &:not(:first-child) {
+      margin-right: var(--s1);
+    }
+  }
+}

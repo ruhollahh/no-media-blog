@@ -3,7 +3,6 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  box-shadow: 0 var(--s2) var(--s3) #fff;
   background-color: #fff;
   color: #475569;
 
@@ -28,5 +27,9 @@
     &:not(:first-child) {
       margin-right: var(--s1);
     }
+  }
+
+  @media (min-width: 640px) {
+    box-shadow: 0 var(--s1) var(--s2) #fff;
   }
 }

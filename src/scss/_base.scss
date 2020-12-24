@@ -42,10 +42,10 @@
       var(--ratio)
   );
   --line-height: calc(1.5 * var(--ratio));
-  --line-height-small: var(--ratio);
+  --line-height-small: calc(1.2 * var(--ratio));
   box-sizing: border-box;
   font-size: calc(0.333vw + 0.8em);
-  line-height: calc(1.5 * var(--ratio));
+  line-height: --line-height;
 }
 
 body {

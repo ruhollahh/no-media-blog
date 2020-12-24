@@ -4,7 +4,7 @@
   "description": "responsive blog layout using modular scales",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style compressed -o css src/scss",
+    "scss": "node-sass --output-style nested -o css src/scss",
     "postcss": "postcss -r css/*",
     "serve": "browser-sync start --server --files '/css/*.css, /js/*.js, /**/*.html'",
     "build:css": "npm run scss && npm run postcss",

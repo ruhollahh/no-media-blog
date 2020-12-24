@@ -44,7 +44,7 @@
   --line-height: calc(1.5 * var(--ratio));
   --line-height-small: calc(1.2 * var(--ratio));
   box-sizing: border-box;
-  font-size: calc(0.333vw + 0.8em);
+  font-size: calc(0.333vw + 1em);
   line-height: --line-height;
 }
 
@@ -52,6 +52,10 @@ body {
   direction: rtl;
   font-family: Vazir;
   font-weight: 400;
+}
+
+ul {
+  list-style: none;
 }
 
 h1,
@@ -81,7 +85,8 @@ a:visited {
   color: inherit;
 }
 
-article > * + * {
+article > * + *,
+aside > * + * {
   margin-top: var(--s2);
 }
 

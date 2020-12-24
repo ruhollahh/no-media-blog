@@ -19,7 +19,7 @@
 }
 
 :root {
-  --ratio: 1.25;
+  --ratio: 1.2;
   --s-5: calc(
     var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) /
       var(--ratio)
@@ -42,7 +42,7 @@
       var(--ratio)
   );
   box-sizing: border-box;
-  font-size: calc(0.333vw + 1.1em);
+  font-size: calc(0.333vw + 0.8em);
   line-height: calc(1.5 * var(--ratio));
 }
 

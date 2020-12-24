@@ -3,30 +3,35 @@ body {
   padding-top: 6rem;
 }
 
-.container {
-  overflow: hidden;
-  max-width: 65rem;
+.center {
+  max-width: 60rem;
   margin-right: auto;
   margin-left: auto;
-  padding: calc(var(--s0) / 2) var(--s2);
 }
 
 .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin: calc((var(--s3) / 2) * -1);
+  padding: calc(var(--s0) / 2) var(--s3);
+}
+
+.with-sidebar {
+  overflow: hidden;
 
   & > * {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc((var(--s3) / 2) * -1);
+  }
+  & > * > * {
     flex-grow: 1;
     margin: calc(var(--s3) / 2);
   }
-  & > :last-child {
+  & > * > :last-child {
     flex-basis: 15rem;
   }
 
-  & > :first-child {
+  & > * > :first-child {
     flex-basis: 0;
     flex-grow: 999;
-    min-width: calc(70% - var(--s3));
+    min-width: calc(50% - var(--s3));
   }
 }

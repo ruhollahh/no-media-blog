@@ -41,6 +41,8 @@
     var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) *
       var(--ratio)
   );
+  --line-height: calc(1.5 * var(--ratio));
+  --line-height-small: var(--ratio);
   box-sizing: border-box;
   font-size: calc(0.333vw + 0.8em);
   line-height: calc(1.5 * var(--ratio));
@@ -50,6 +52,13 @@ body {
   direction: rtl;
   font-family: Vazir;
   font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: var(--line-height-small);
 }
 
 h1 {

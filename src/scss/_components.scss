@@ -1,4 +1,5 @@
 /// HEADER COMPONENT
+
 .header {
   position: fixed;
   top: 0;
@@ -34,10 +35,11 @@
     box-shadow: 0 var(--s1) var(--s2) #fff;
   }
 }
-//// HEADER COMPONENT
 
 /// SIDEBAR COMPONENT
+
 .sidebar {
+  font-size: var(--s-1);
   color: #44403c;
 
   &__section {
@@ -52,22 +54,10 @@
     font-size: var(--s2);
   }
 }
-/// SIDEBAR COMPONENT
 
 /// TAG COMPONENT
+
 .tag {
-  overflow: hidden;
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: calc(var(--s-4) / 2 * -1);
-  }
-
-  &__item {
-    margin: calc(var(--s-4) / 2);
-  }
-
   &__link {
     display: block;
     background-color: #a5b4fccc;
@@ -75,7 +65,8 @@
     padding: var(--s-5);
   }
 }
-/// TAG COMPONENT
+
+/// POPULAR COMPONENT
 
 .popular {
   &__list > li + li {

@@ -1,19 +1,21 @@
 @font-face {
   font-family: Vazir;
-  src: url("/assets/fonts/Vazir.ttf");
+  src: url("../assets/fonts/Vazir.ttf");
   font-weight: normal; }
 
 @font-face {
   font-family: Vazir;
-  src: url("/assets/fonts/Vazir-Bold.ttf");
+  src: url("../assets/fonts/Vazir-Bold.ttf");
   font-weight: bold; }
 
 *,
 *::before,
 *::after {
-  padding: 0;
+  box-sizing: inherit;
   margin: 0;
-  box-sizing: inherit; }
+  padding: 0;
+  font-size: inherit;
+  color: inherit; }
 
 :root {
   --ratio: 1.2;
@@ -71,8 +73,7 @@ h3 {
 
 a:link,
 a:visited {
-  text-decoration: none;
-  color: inherit; }
+  text-decoration: none; }
 
 article > * + *,
 aside > * + * {
@@ -98,16 +99,25 @@ body {
   .with-sidebar > * {
     display: flex;
     flex-wrap: wrap;
-    margin: calc((var(--s5) / 2) * -1); }
+    margin: calc(var(--s4) * -1); }
   .with-sidebar > * > * {
     flex-grow: 1;
-    margin: calc(var(--s5) / 2); }
+    margin: var(--s4); }
   .with-sidebar > * > :last-child {
     flex-basis: 20rem; }
   .with-sidebar > * > :first-child {
     flex-basis: 0;
     flex-grow: 999;
-    min-width: calc(50% - var(--s5)); }
+    min-width: calc(50% - (var(--s4) * 2)); }
+
+.tag {
+  overflow: hidden; }
+  .tag > * {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(var(--s-4) / 2 * -1); }
+  .tag > * > * {
+    margin: calc(var(--s-4) / 2); }
 
 .header {
   position: fixed;
@@ -135,6 +145,7 @@ body {
       box-shadow: 0 var(--s1) var(--s2) #fff; } }
 
 .sidebar {
+  font-size: var(--s-1);
   color: #44403c; }
   .sidebar__section > * + * {
     margin-top: var(--s-1); }
@@ -143,19 +154,11 @@ body {
   .sidebar__heading {
     font-size: var(--s2); }
 
-.tag {
-  overflow: hidden; }
-  .tag__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: calc(var(--s-4) / 2 * -1); }
-  .tag__item {
-    margin: calc(var(--s-4) / 2); }
-  .tag__link {
-    display: block;
-    background-color: #a5b4fccc;
-    border-radius: var(--s-5);
-    padding: var(--s-5); }
+.tag__link {
+  display: block;
+  background-color: #a5b4fccc;
+  border-radius: var(--s-5);
+  padding: var(--s-5); }
 
 .popular__list > li + li {
   margin-top: var(--s-1); }

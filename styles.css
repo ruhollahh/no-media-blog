@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: Vazir;
-  src: url("../assets/fonts/Vazir.ttf");
+  src: url("./assets/fonts/Vazir.ttf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url("../assets/fonts/Vazir-Bold.ttf");
+  src: url("./assets/fonts/Vazir-Bold.ttf");
   font-weight: bold;
 }
 

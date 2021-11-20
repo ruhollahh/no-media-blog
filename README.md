@@ -1,1 +1,1 @@
-responsive blog layout using modular scales
+responsive blog layout using flexbox and relative units
